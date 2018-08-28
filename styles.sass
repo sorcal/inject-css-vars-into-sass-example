@@ -1,0 +1,11 @@
+@import './colorTheme'
+
+@function getCssVar($var)
+  @return var(#{$var})
+
+// primary
+$brand-color-blue: getCssVar(--text-color)
+
+.block
+  color: $brand-color-blue
+  //background-color: darken($brand-color-blue, 5%) // will not work
